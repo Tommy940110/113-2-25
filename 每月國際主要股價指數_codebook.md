@@ -27,3 +27,15 @@ This dataset contains monthly stock index values for different countries and reg
 - **倫敦-金融時報指數**: London Financial Times Stock Exchange Index (FTSE 100)
 - **中國-上海綜合指數**: China Shanghai Composite Index
 - **中國-香港恆生指數**: Hong Kong Hang Seng Index
+
+## Summary
+- **Time Period:** January 2024 - January 2025
+- **Number of Observations:** 132
+- **Number of Unique Stock Indices:** 10
+- **Geographic Coverage:** Taiwan, U.S., Japan, Singapore, South Korea, U.K., China, Hong Kong
+- **Notable Trends:**
+  - The U.S. and Taiwan stock indices show a general upward trend.
+  - The Hang Seng Index (Hong Kong) shows significant fluctuations.
+  - The Nikkei 225 (Japan) reached a peak in December 2024 before slightly declining in January 2025.
+  - The Financial Times Index (UK) shows steady growth.
+
