@@ -11,7 +11,7 @@
 
 
 
-<title>每月國際主要股價指數_callbook</title>
+<title>每月國際主要股價指數_codebook</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -355,71 +355,79 @@ display: none;
 <div id="codebook-for-stock-index-dataset" class="section level1">
 <h1>Codebook for Stock Index Dataset</h1>
 <div id="dataset-description" class="section level2">
-<h2>Dataset Description</h2>
-<p>This dataset contains monthly stock index values for various global
-stock markets from January 2024 to January 2025. Each row represents the
-stock index value of a specific country in a given month. The dataset
-includes indices from Taiwan, the United States, Japan, Singapore, South
-Korea, the United Kingdom, China, and Hong Kong.</p>
-</div>
-<div id="variable-definitions" class="section level2">
-<h2>Variable Definitions</h2>
+<h2>Dataset Description:</h2>
+<p>This dataset contains monthly stock index values for different
+countries and regions from January 2024 to January 2025. Each entry
+includes the date, the corresponding stock market index, and its value
+for various countries, including Taiwan, the United States, Japan, South
+Korea, Singapore, the UK, China, and Hong Kong.</p>
+<div id="variables" class="section level3">
+<h3>Variables:</h3>
 <table>
 <colgroup>
-<col width="36%" />
-<col width="29%" />
-<col width="34%" />
+<col width="25%" />
+<col width="11%" />
+<col width="62%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Variable Name</th>
-<th>Data Type</th>
-<th>Description</th>
+<th>Class</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>月別 (Month)</td>
-<td>String (YYYY-MM)</td>
-<td>The year and month of the recorded stock index value.</td>
+<td><code>月別</code></td>
+<td>Date</td>
+<td>The month and year of the stock index value</td>
 </tr>
 <tr class="even">
-<td>月份 (Region)</td>
-<td>String</td>
-<td>The country or region where the stock index belongs.</td>
+<td><code>股價指數</code></td>
+<td>Factor</td>
+<td>The stock market index (e.g., “台灣-加權指數” for Taiwan Weighted
+Index)</td>
 </tr>
 <tr class="odd">
-<td>股價指數 (Stock Index Value)</td>
-<td>Integer</td>
-<td>The closing value of the stock index for the given month.</td>
+<td><code>股價</code></td>
+<td>Numeric</td>
+<td>The stock index value for that month and index</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="stock-indices-covered" class="section level2">
-<h2>Stock Indices Covered</h2>
+<div id="dataset-structure" class="section level3">
+<h3>Dataset Structure:</h3>
 <ul>
-<li><strong>台灣-加權指數 (Taiwan Weighted Index)</strong> – Represents
-the performance of the Taiwan Stock Exchange (TWSE).</li>
-<li><strong>台灣-上櫃指數 (Taiwan OTC Index)</strong> – Reflects the
-performance of the over-the-counter market in Taiwan.</li>
-<li><strong>美國-那斯達克指數 (NASDAQ Index, USA)</strong> – A major
-index of technology and growth stocks in the U.S.</li>
-<li><strong>美國-道瓊工業指數 (Dow Jones Industrial Average,
-USA)</strong> – Tracks 30 major blue-chip companies in the U.S.</li>
-<li><strong>日本-日經225指數 (Nikkei 225, Japan)</strong> – Represents
-225 top companies in the Tokyo Stock Exchange.</li>
-<li><strong>新加坡-海峽時報指數 (Straits Times Index,
-Singapore)</strong> – A benchmark for the Singapore stock market.</li>
-<li><strong>南韓-綜合指數 (KOSPI, South Korea)</strong> – A measure of
-the South Korean stock market performance.</li>
-<li><strong>倫敦-金融時報指數 (FTSE 100, UK)</strong> – Represents the
-top 100 companies in the London Stock Exchange.</li>
-<li><strong>中國-上海綜合指數 (Shanghai Composite Index, China)</strong>
-– A broad index of the Shanghai Stock Exchange.</li>
-<li><strong>中國-香港恆生指數 (Hang Seng Index, Hong Kong)</strong> –
-Represents the largest companies in the Hong Kong Stock Exchange.</li>
+<li><strong><code>月別</code></strong>: A date field representing the
+month and year (e.g., “2024-01” for January 2024).</li>
+<li><strong><code>股價指數</code></strong>: A factor variable indicating
+the name of the stock market index, such as “台灣-加權指數” (Taiwan
+Weighted Index) or “美國-道瓊工業指數” (US Dow Jones Industrial
+Index).</li>
+<li><strong><code>股價</code></strong>: A numeric variable representing
+the value of the respective stock index for the given month.</li>
 </ul>
+</div>
+<div id="description-of-stock-market-indices" class="section level3">
+<h3>Description of Stock Market Indices:</h3>
+<ul>
+<li><strong>台灣-加權指數</strong>: Taiwan Weighted Index</li>
+<li><strong>台灣-上櫃指數</strong>: Taiwan Over-the-Counter Index</li>
+<li><strong>美國-那斯達克指數</strong>: US Nasdaq Index</li>
+<li><strong>美國-道瓊工業指數</strong>: US Dow Jones Industrial
+Index</li>
+<li><strong>日本-日經225指數</strong>: Japan Nikkei 225 Index</li>
+<li><strong>新加坡-海峽時報指數</strong>: Singapore Straits Times
+Index</li>
+<li><strong>南韓-綜合指數</strong>: South Korea KOSPI Index</li>
+<li><strong>倫敦-金融時報指數</strong>: London Financial Times Stock
+Exchange Index (FTSE 100)</li>
+<li><strong>中國-上海綜合指數</strong>: China Shanghai Composite
+Index</li>
+<li><strong>中國-香港恆生指數</strong>: Hong Kong Hang Seng Index</li>
+</ul>
+</div>
 </div>
 </div>
 
