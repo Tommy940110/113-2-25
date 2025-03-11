@@ -1,31 +1,26 @@
-你好，我是 **《每月國際主要股價指數》** 數據集 📊，以下是我的自我介紹：  
+# Codebook for Stock Index Dataset
 
----
+## Dataset Description
 
-### **📌 1️⃣ 我的內容是什麼？（What is the dataset about?）**  
-我是關於 **各國主要股價指數的歷史數據**，以 **月度為單位** 記錄不同市場的股價指數變化。我可以幫助分析 **全球股市走勢**，比較不同國家的 **經濟表現**，甚至應用於 **投資決策** 和 **機器學習預測**。
+This dataset contains monthly stock index values for various global stock markets from January 2024 to January 2025. Each row represents the stock index value of a specific country in a given month. The dataset includes indices from Taiwan, the United States, Japan, Singapore, South Korea, the United Kingdom, China, and Hong Kong.
 
----
+## Variable Definitions
 
-### **📌 2️⃣ 我有哪些變數？（What are the variables?）**  
-我通常包含以下幾個變數：  
+| Variable Name                | Data Type        | Description                                               |
+|--------------------------|---------------------|-------------------------|
+| 月別 (Month)                 | String (YYYY-MM) | The year and month of the recorded stock index value.     |
+| 月份 (Region)                | String           | The country or region where the stock index belongs.      |
+| 股價指數 (Stock Index Value) | Integer          | The closing value of the stock index for the given month. |
 
-1. **指數名稱**：哪個國家的股價指數（如「S&P 500」「日經225」「恆生指數」）。  
-2. **年份 / 月份**：紀錄時間點，通常欄位名稱是「YYYY/MM」格式（如 2023/01, 2023/02）。  
-3. **股價指數**：該月份對應的股價指數數值。  
+## Stock Indices Covered
 
----
-
-### **📌 3️⃣ 我的變數類型是？（What are the variable types?）**  
-| 變數名稱 | 類型（Variable Type） | 說明 |
-|------|------|------|
-| 指數名稱 | **字串（character）** | 例如：「S&P 500」「道瓊工業指數」「上證綜合指數」 |
-| 月份 | **字串（character）** | 時間變數（但可轉換為 Date 類型） |
-| 股價指數 | **數值（numeric）** | 每月的股價指數數值，可用於計算趨勢 |
-
----
-
-### **📊 你可以對我做什麼？**
-- **轉換為長格式（reshape）** 讓分析更方便  
-- **視覺化股價走勢（ggplot2）** 看出市場趨勢  
-- **時間序列分析（ARIMA, Prophet）** 預測未來股市  
+-   **台灣-加權指數 (Taiwan Weighted Index)** – Represents the performance of the Taiwan Stock Exchange (TWSE).
+-   **台灣-上櫃指數 (Taiwan OTC Index)** – Reflects the performance of the over-the-counter market in Taiwan.
+-   **美國-那斯達克指數 (NASDAQ Index, USA)** – A major index of technology and growth stocks in the U.S.
+-   **美國-道瓊工業指數 (Dow Jones Industrial Average, USA)** – Tracks 30 major blue-chip companies in the U.S.
+-   **日本-日經225指數 (Nikkei 225, Japan)** – Represents 225 top companies in the Tokyo Stock Exchange.
+-   **新加坡-海峽時報指數 (Straits Times Index, Singapore)** – A benchmark for the Singapore stock market.
+-   **南韓-綜合指數 (KOSPI, South Korea)** – A measure of the South Korean stock market performance.
+-   **倫敦-金融時報指數 (FTSE 100, UK)** – Represents the top 100 companies in the London Stock Exchange.
+-   **中國-上海綜合指數 (Shanghai Composite Index, China)** – A broad index of the Shanghai Stock Exchange.
+-   **中國-香港恆生指數 (Hang Seng Index, Hong Kong)** – Represents the largest companies in the Hong Kong Stock Exchange.
