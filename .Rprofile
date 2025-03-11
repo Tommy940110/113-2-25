@@ -20,4 +20,3 @@ theme_set(
   ) + 
     theme_classic()
 )
-
