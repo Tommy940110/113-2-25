@@ -28,7 +28,7 @@ This dataset contains monthly stock index values for different countries and reg
 - **中國-上海綜合指數**: China Shanghai Composite Index
 - **中國-香港恆生指數**: Hong Kong Hang Seng Index
 
-## Summary
+## Summary of Data
 - **Time Period:** January 2024 - January 2025
 - **Number of Observations:** 132
 - **Number of Unique Stock Indices:** 10
